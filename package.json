@@ -11,8 +11,17 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "UNLICENSED",
+  
   "devDependencies": {
     "concurrently": "^5.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichealJWEllis/Book_Search_Engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MichealJWEllis/Book_Search_Engine/issues"
+  },
+  "homepage": "https://github.com/MichealJWEllis/Book_Search_Engine#readme"
 }
