@@ -28,20 +28,20 @@ const LoginForm = () => {
     }
 
     try {
-      const response = await loginUser(userFormData);
-
-      if (!response.ok) {
-        throw new Error('something went wrong!');
-      }
-
-      const { query } = await login({
+      const { data } = await login({
         variables: { ...userFormData }
-      })
-      Auth.login(query.login.token)
-    } catch (err) {
-      console.error(err);
-      setShowAlert(true);
+      });
+
+      Auth.login(data.login.token);
+    } catch (e) {
+      console.error(e);
     }
+
+    setUserFormData({
+      email: '',
+      password: '',
+    });
+
 
     setUserFormData({
       username: '',
